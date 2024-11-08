@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 const CLIENT_ID = 'cc0d6b182b0c47828f0fae661633ba7d';
 const CLIENT_SECRET = 'a311b458ff49400d9a1759c20b0c3093';
-const REDIRECT_URI = 'https://spotify-frontend-fairhains-projects.vercel.app/callback';
+const REDIRECT_URI = 'http://localhost:5173/callback';
 
 app.get('/getAccessToken', async (req, res) => {
   const code = req.query.code;
